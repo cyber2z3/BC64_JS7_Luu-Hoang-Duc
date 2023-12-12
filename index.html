@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+  </head>
+
+  <body>
+    <div class="container py-5">
+      <h2>Thao tác với các số nguyên</h2>
+      <div class="row">
+        <div class="col-3">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="enterNum"
+              aria-describedby="helpId"
+              placeholder="Nhập số n"
+            />
+          </div>
+        </div>
+        <div class="col-6">
+          <button class="btn bg-dark text-white" id="enterBtn">Nhập</button>
+        </div>
+      </div>
+      <div class="bg-dark text-white p-3" id="displayArr"></div>
+    </div>
+
+    <!-- tính tổng số dương -->
+    <div class="container py-3">
+      <h2>Tính tổng số dương</h2>
+      <div class="row">
+        <div class="col-3">
+          <button class="btn bg-dark text-white" id="btn1">Tính</button>
+        </div>
+        <div class="col">
+          <div class="bg-dark text-white p-3" id="kq1"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- đếm số dương -->
+    <div class="container py-3">
+      <h2>Đếm số</h2>
+      <div class="row">
+        <div class="col-3">
+          <button class="btn bg-dark text-white" id="btn2">Đếm số</button>
+        </div>
+        <div class="col">
+          <div class="bg-dark text-white p-3" id="kq2"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tìm số nhỏ nhất trong mảng  -->
+    <div class="container py-3">
+      <h2>Tìm số nhỏ nhất</h2>
+      <div class="row">
+        <div class="col-3">
+          <button class="btn bg-dark text-white" id="btn3">Số nhỏ nhất</button>
+        </div>
+        <div class="col">
+          <div class="bg-dark text-white p-3" id="kq3"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tìm số dương nhỏ nhất -->
+    <div class="container py-3">
+      <h2>Tìm số dương nhỏ nhất</h2>
+      <div class="row">
+        <div class="col-3">
+          <button class="btn bg-dark text-white" id="btn4">
+            Số dương nhỏ nhất
+          </button>
+        </div>
+        <div class="col">
+          <div class="bg-dark text-white p-3" id="kq4"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Tìm số chẵn cuối cùng  -->
+    <div class="container py-3">
+      <h2>Tìm số chẵn cuối cùng</h2>
+      <div class="row">
+        <div class="col-3">
+          <button class="btn bg-dark text-white" id="btn5">Số chẵn cuối</button>
+        </div>
+        <div class="col">
+          <div class="bg-dark text-white p-3" id="kq5"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Đổi chỗ 2 giá trị -->
+    <div class="container py-3">
+      <h2>Đôi chỗ 2 giá trị</h2>
+      <div class="row">
+        <div class="col-6">
+          <div class="form-group">
+            <label for="num1">Vị trí số 1</label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="num1"
+              aria-describedby="helpId"
+              placeholder="Nhập vào số vị trí 1"
+            />
+          </div>
+        </div>
+        <div class="col-6">
+          <div class="form-group">
+            <label for="num2">Vị trí số 2</label>
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="num2"
+              aria-describedby="helpId"
+              placeholder="Nhập vào số vị trí 2"
+            />
+          </div>
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-3">
+          <button class="btn bg-dark text-white" id="btn6">Đổi chỗ</button>
+        </div>
+        <div class="col">
+          <div class="bg-dark text-white p-3" id="kq6"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Sắp xếp tăng dần  -->
+    <div class="container py-3">
+      <h2>Sắp xếp tăng dần</h2>
+      <div class="row">
+        <div class="col-3">
+          <button class="btn bg-dark text-white" id="btn7">Sắp xếp</button>
+        </div>
+        <div class="col">
+          <div class="bg-dark text-white p-3" id="kq7"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Số nguyên tố đầu tiên trong mảng  -->
+    <div class="container py-3">
+      <h2>Tìm số nguyên tố đầu tiên trong mảng</h2>
+      <div class="row">
+        <div class="col-3">
+          <button class="btn bg-dark text-white" id="btn8">Tìm</button>
+        </div>
+        <div class="col">
+          <div class="bg-dark text-white p-3" id="kq8"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Đếm số nguyên -->
+    <div class="container py-3">
+      <h2>Đếm số nguyên trong mảng 2</h2>
+      <div class="row">
+        <div class="col-3">
+          <div class="form-group">
+            <input
+              type="text"
+              class="form-control"
+              name=""
+              id="inputNum2"
+              aria-describedby="helpId"
+              placeholder="Nhập số"
+            />
+          </div>
+        </div>
+        <div class="col-6">
+          <button class="btn bg-dark text-white" id="enterBtn2">Nhập</button>
+        </div>
+      </div>
+      <div class="bg-dark text-white p-3" id="arrDisplay_2"></div>
+
+      <div class="row py-3">
+        <div class="col-3">
+          <button class="btn bg-dark text-white" id="demSoNguyen">
+            Đếm số nguyên
+          </button>
+        </div>
+        <div class="col">
+          <div class="bg-dark text-white p-3" id="soNguyen"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- So sánh số lượng số dương và số âm -->
+    <div class="container py-3">
+      <h2>So sánh số dương và số âm</h2>
+      <div class="row">
+        <div class="col-3">
+          <button class="btn bg-dark text-white" id="btn10">So sánh</button>
+        </div>
+        <div class="col">
+          <div class="bg-dark text-white p-3" id="kq10"></div>
+        </div>
+      </div>
+    </div>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+
+    <script src="./index.js"></script>
+  </body>
+</html>
