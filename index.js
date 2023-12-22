@@ -1,5 +1,5 @@
 // Input number 
-var a = []
+var a = [10,1,2,4,9,-20,-23,0]
 document.getElementById('enterBtn').onclick = function(){
     var newElement = document.getElementById('enterNum').value*1;
     // console.log(newElement)
@@ -20,16 +20,10 @@ document.getElementById('btn1').onclick = function(){
 
 // 2. Đếm có bao nhiêu số dương trong mảng.
 document.getElementById('btn2').onclick = function(){
-    var count = 0; 
-    var positiveNum = countPosNumber(a, count); 
+    var positiveNum = countPosNumber(a); 
     document.getElementById('kq2').innerHTML = `Số dương: ${positiveNum}`
 }
-function countPosNumber(a, count){
-    for (var i=0; i<a.length; i++){
-        if (a[i]>0) count++
-    }
-    return count
-}
+
 
 // 3. Tìm số nhỏ nhất trong mảng.
 document.getElementById('btn3').onclick = function(){
@@ -114,9 +108,11 @@ function swapIndex(a, i, j){
 
 // 7. Sắp xếp mảng theo thứ tự tăng dần.
 document.getElementById('btn7').onclick = function(){
-    var sortArr = a.sort();
+    a.sort(function(a,b){
+        return a-b;
+    });
     document.getElementById('kq7').innerHTML = 
-        `Mảng sau khi được sắp xếp ${sortArr}`
+        `Mảng sau khi được sắp xếp ${a}`
 }
 
 // 8. Tìm số nguyên tố đầu tiên trong mảng. Nếu mảng không có số nguyên tố thì trả về – 1.
@@ -169,11 +165,13 @@ function soNguyen(a){
 document.getElementById('btn10').onclick = function(){
     var pos = countPosNumber(a);
     var nega = countNegaNumber(a);
+    console.log(nega)
+    console.log(pos)
 
     if (pos>nega)
-        document.getElementById('kq10').innerHTML = "Số dương>số âm"
+        document.getElementById('kq10').innerHTML = "Số dương > số âm"
     else 
-        document.getElementById('kq10').innerHTML = "Số dương<số âm"   
+        document.getElementById('kq10').innerHTML = "Số dương < số âm"   
 }
 function countNegaNumber(a){
     var count=0;
@@ -181,4 +179,11 @@ function countNegaNumber(a){
         if (a[i]<0) count++;
     }
     return count;
+}
+function countPosNumber(a){
+    var count = 0; 
+    for (var i=0; i<a.length; i++){
+        if (a[i]>0) count++
+    }
+    return count
 }
